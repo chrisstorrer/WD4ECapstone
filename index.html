@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="mobile.css">
+</head>
+  <body>
+    <header>
+      <nav>
+          <ul class="navbar">
+            <li>Choose an App:</li>
+             <li><a href="index.html" class="active">To-Do List</a></li>
+             <li><a href="connectfour.html">Connect Four</a></li>
+             <li><a href="mememaker.html">Meme-Maker</a></li>
+          </ul>
+      </nav>
+  </header>
+    <h1>To-Do List</h1>
+    <form id="taskForm">
+      <label for="newTask">What is your goal?</label>
+      <input type="text" value="" placeholder="Enter task here" id="newTask" />
+      <button>Add to list</button>
+    </form>
+    <h1>Your To-Do List</h1>
+    <ul id="todoList"></ul>
+
+    <script src="JavaScript/todoapp.js"></script>
+  </body>
+</html>

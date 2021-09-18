@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="mobile.css">
+  <title>Meme Maker 3000</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+        <ul class="navbar">
+          <li>Choose an App:</li>
+
+           <li><a href="index.html" >To-Do List</a></li>
+           <li><a href="connectfour.html">Connect Four</a></li>
+           <li><a href="mememaker.html" class="active">Meme-Maker</a></li>
+        </ul>
+    </nav>
+</header>
+  <div id="form">
+  <h1>Meme-Maker 3000</h1>
+
+<!-- Input form for meme maker -->
+  <form id="meme-form">
+    <!-- Paragraph used just to break up the text -->
+    <p>
+      <label>Enter the URL for your image:
+        <input type="url" name="imageURL" placeholder="Paste image URL (required)">
+      </label>
+    </p>
+    <p>
+      <label>Enter text for the top half of your meme:
+        <input type="text" name="topText" placeholder="Text for top (optional)">
+      </label>
+    </p>
+    <p>
+      <label>Enter text for the bottom of your meme: <input type="text" name="bottomText" placeholder="Text for bottom (optional)">
+      </label>
+    </p>
+    <!-- button for -->
+    <input type="submit" value="Submit">
+  </form> 
+  <h1>Results:</h1>
+</div>
+
+  <!-- results of meme creation go here -->
+  <div id="results">
+  </div>
+  <div id="examples">
+    <h1>Example Memes:</h1>
+    <img class="meme" src="images/freememe.jpg" alt="Small girl running on grass, meme text reads: Free Stuff? On my Way">
+    <img src="images/avocadomeme.jpg" alt="Danaerys Targaryen holds a dragon egg, meme text reads: THAT MOMENT WHEN YOU FIND THE PERFECT AVOCADO AT THE SUPERMARKET" class="meme">
+    <img src="images/smilememe.jpeg" alt="Business man holds a glass looking towards the viewer, meme text reads: HERE'S TO ALL THE MEMES THAT MAKE US SMILE" class="meme">
+    <img src="images/tomeme.jpg" alt="Portrait of William Shakespear, meme text reads TO MEME OR NOT TO MEME THAT IS THE QUESTION" class="meme">
+  </div>
+    
+  <script src="JavaScript/memeapp.js"></script>
+</body>
+
+</html>

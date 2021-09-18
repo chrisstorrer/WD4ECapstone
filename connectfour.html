@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Connect Four</title>
+  <!-- <link href="css/connectfour.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+        <ul class="navbar">
+          <li>Choose an App:</li>
+
+           <li><a href="index.html" >To-Do List</a></li>
+           <li><a href="connectfour.html" class="active">Connect Four</a></li>
+           <li><a href="mememaker.html">Meme-Maker</a></li>
+        </ul>
+    </nav>
+</header>
+<section>
+<h1>How To Play</h1>
+<p>How to Play: Connect Four is a game for two players (red and blue). The players alternate turns, dropping a piece of their color in the top of a column. The piece will fall down to the further-down unoccupied slot.</p>
+<p>The game is won when a player makes four in a row (horizontally, vertically, or diagonally). The game is a tie if the entire board fills up without a winner.</p><p class="currPlayer">Red Plays First!</p></section>
+
+  <div id="game">
+    <table id="board">
+    </table>
+  </div>
+
+
+  <script src="JavaScript/connectfour.js"></script>
+
+</body>
+
+</html>

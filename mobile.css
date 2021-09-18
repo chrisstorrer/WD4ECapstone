@@ -1,0 +1,304 @@
+/* Rules that apply to mobile devices */
+@media all and (max-width: 699px){
+body{
+    display: flex;
+    flex-direction: column;
+}
+/* Removes bullets from the navbar list */
+.navbar{
+    list-style-type: none;
+    font-size: 2em;
+}
+ul.navbar {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+/* remove default margin and padding from browser style sheet */
+html, body {
+  margin: 0px;
+  padding: 0;
+    }
+    #taskForm{
+      display: flex;
+      margin-left: 20px;
+    }
+    form{
+      text-align: center;
+    }
+    section > p{
+      text-align: center;
+    }
+    p{
+      text-align: left;
+      width: 50%;
+      margin: 0 25%
+    }
+    /* headings styles */
+    h1, .navbar{
+      width: 100vw;
+      background-color: rgba(94, 99, 84, 0.795);
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      /* color: ivory; */
+      /* text-shadow: lightcoral; */
+      /* padding-left: 0vw;
+      margin-left: 0vw; */
+  }
+/* Meme Maker Rules */
+body:not(#board){
+    background-color: rgba(144, 238, 144, 0.151);
+}
+input {
+    border: inset;
+    /* width: 300px; */
+    /* text-align: justify; */
+    /* display: inline-flex; */
+    /* flex: auto; */
+}
+input[type='Submit']{
+    border:groove;
+    width: 100px;
+} 
+/* remove bullets from todo list */
+#todoList{
+  list-style-type: none;
+  margin: 5px;
+
+}
+/* stacks input fields vertically */
+input[type='text']{
+  display: block;
+}
+input[type='url']{
+  display: block;
+}
+.meme {
+    width: 400px;
+    height: auto;
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
+    position: relative;
+    margin: 2px; 
+}
+
+.memeText {
+    width: 450px;
+    letter-spacing: 1.4px;
+    /* margin: 0; */
+    font-size: 200%;
+    color: white;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    /* line-height: 50px; */
+    text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
+    
+}
+
+.topMemeText {
+    position: absolute;
+    top: 3px;
+    /* z-index: 9; */
+    max-height: 50%;
+}
+
+.bottomMemeText {
+    position: absolute;
+    bottom: 30px;
+    z-index: 9;
+    max-height: 50%;
+}
+
+/* Connect Four Rules */
+#board td {
+    width: 50px;
+    height: 50px;
+    border: inset 5px rgb(111, 129, 219);
+    border-radius: 50%;
+    
+  }
+  .piece {
+    border-radius: 50%;
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+    /* Additional Piece Styles */
+  }
+  .player1 {
+    /* background-color: #f30909; */
+    background:linear-gradient(rgba(173, 34, 99, 0.4), rgb(255, 0, 0));
+  }
+  
+  .player2 {
+    /* background-color: #0808ff; */
+    background:linear-gradient(rgb(34, 120, 173), rgb(0, 0, 255));
+  }
+  #column-top td {
+    border: inset 5px rgba(255, 11, 11, 0.6);
+  }
+  
+  #column-top td:hover {
+    background:radial-gradient(rgba(173, 34, 34, 0.358), rgba(0, 0, 255, 0.296));
+    /* background-color: gold; */
+  }
+  table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background: repeating-linear-gradient(rgba(130, 112, 112, 0.117), rgba(102, 102, 234, 0.2));
+  }
+  .currPlayer{
+    font-weight: bold;
+  }
+}
+/* Styles for Desktop Screens will override earlier rules*/
+@media all and (min-width: 700px){
+    ul.navbar li{
+        display: inline;
+    }
+    ul.navbar {
+      margin-top: 0;
+      padding-left: 0;
+      font-size: 2em;
+  }
+    /* Styles for Meme-Maker */
+    body:not(#board){
+        background-color: rgba(144, 238, 144, 0.151);
+    }
+    input {
+        border: inset;
+        width: 300px;
+        /* text-align: justify; */
+        /* display: inline-flex; */
+        /* flex: auto; */
+    }
+    input[type='Submit']{
+        border:groove;
+        width: 100px;
+    } 
+    .meme {
+        width: 400px;
+        height: auto;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        margin: 1%; 
+    }
+    
+    .memeText {
+        width: 450px;
+        letter-spacing: 1.4px;
+        /* margin: 0; */
+        font-size: 200%;
+        color: white;
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: uppercase;
+        /* line-height: 50px; */
+        text-shadow:
+            0.05em 0 black,
+            0 0.05em black,
+            -0.05em 0 black,
+            0 -0.05em black,
+            -0.05em -0.05em black,
+            -0.05em 0.05em black,
+            0.05em -0.05em black,
+            0.05em 0.05em black;
+        
+    }
+    
+    .topMemeText {
+        position: absolute;
+        top: 3px;
+        /* z-index: 9; */
+        max-height: 50%;
+    }
+    
+    .bottomMemeText {
+        position: absolute;
+        bottom: 30px;
+        z-index: 9;
+        max-height: 50%;
+    }
+    
+    /* Connect Four Rules */
+    #board td {
+        width: 50px;
+        height: 50px;
+        border: inset 5px rgb(111, 129, 219);
+        border-radius: 50%;
+        
+      }
+      .piece {
+        border-radius: 50%;
+        margin: 5px;
+        width: 80%;
+        height: 80%;
+        /* Additional Piece Styles */
+      }
+      .player1 {
+        /* background-color: #f30909; */
+        background:linear-gradient(rgba(173, 34, 99, 0.4), rgb(255, 0, 0));
+      }
+      
+      .player2 {
+        /* background-color: #0808ff; */
+        background:linear-gradient(rgb(34, 120, 173), rgb(0, 0, 255));
+      }
+      #column-top td {
+        border: inset 5px rgba(255, 11, 11, 0.6);
+      }
+      
+      #column-top td:hover {
+        background:radial-gradient(rgba(173, 34, 34, 0.358), rgba(0, 0, 255, 0.296));
+        /* background-color: gold; */
+      }
+      table{
+        margin-left: auto;
+        margin-right: auto;
+        /* border: solid 2px rgb(21, 0, 255); */
+        border-collapse: collapse;
+        background: repeating-linear-gradient(rgba(130, 112, 112, 0.117), rgba(102, 102, 234, 0.2));
+      }
+      .currPlayer{
+          font-weight: bold;
+      }
+      h1, .navbar{
+        width: 100vw;
+        background-color: rgba(94, 99, 84, 0.795);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        /* color: ivory; */
+        /* text-shadow: lightcoral; */
+        /* padding-left: 0vw;
+        margin-left: 0vw; */
+    }
+    form{
+      text-align: center;
+    }
+    section > p{
+      text-align: center;
+    }
+    p{
+      text-align: left;
+      width: 50%;
+      margin: 0 25%
+    }
+    /* remove default margin and padding from browser style sheet */
+    html, body {
+  margin: 0;
+  padding: 0;
+    }
+    }
