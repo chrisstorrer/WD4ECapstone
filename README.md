@@ -3,9 +3,9 @@ Created by Chris Storrer
 >Visit the **project on GitHub Pages**: [https://storrer.github.io/WD4ECapstone/](https://storrer.github.io/WD4ECapstone/)
 ## What is it?
 This is a collection of three web apps written in JavaScript.
-1. [To-Do List](https://storrer.github.io/WD4ECapstone/index.html)
-2. [Connect Four](https://storrer.github.io/WD4ECapstone/connectfour.html)
-3. [Meme-Maker](https://storrer.github.io/WD4ECapstone/mememaker.html)
+1. [To-Do List](https://storrer.github.io/WD4ECapstone/index.html) - Add tasks and cross them off when you're done
+2. [Connect Four](https://storrer.github.io/WD4ECapstone/connectfour.html) - Like Tic-Tac-Toe, only larger
+3. [Meme-Maker](https://storrer.github.io/WD4ECapstone/mememaker.html) - Input an image's URL, the desired text, and voilà: a new meme!
 
 ## Why did I make this website?
 This site is my capstone project for the [Web Design For Everybody](https://www.coursera.org/specializations/web-design) specialization offered by the University of Michigan and Coursera. I completed five courses over a period of 21 weeks to earn a [certificate.](https://coursera.org/share/903617d54a9ab0e149dbd43785b8c78a)
