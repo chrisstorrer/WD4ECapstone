@@ -2,7 +2,7 @@
 Created by Chris Storrer
 >Visit the **project on GitHub Pages**: [https://storrer.github.io/WD4ECapstone/](https://storrer.github.io/WD4ECapstone/)
 ## What is it?
-This is a collection of three web apps:
+This is a collection of three web apps written in JavaScript.
 1. [To-Do List](https://storrer.github.io/WD4ECapstone/index.html)
 2. [Connect Four](https://storrer.github.io/WD4ECapstone/connectfour.html)
 3. [Meme-Maker](https://storrer.github.io/WD4ECapstone/mememaker.html)
